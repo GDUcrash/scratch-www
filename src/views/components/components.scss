@@ -46,10 +46,11 @@
         .header-gray,
         .type-gray,
         .link-blue,
+        .link-blue-hover,
         .splash-green,
         .splash-pink,
         .splash-blue {
-            color: $ui-white;
+            color: $text-white;
         }
 
         .ui-blue {
@@ -122,6 +123,10 @@
 
         .link-blue {
             background-color: $link-blue;
+        }
+
+        .link-blue-hover {
+            background-color: $link-blue-hover;
         }
 
         .splash-green {

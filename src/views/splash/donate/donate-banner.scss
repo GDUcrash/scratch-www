@@ -34,7 +34,7 @@ $tile-height: 244px;
 
         .donate-text {
             text-align: left;
-            color: $ui-white;
+            color: $text-white;
             font-size: 1rem;
             font-weight: bold;
             margin-right: 1rem;
@@ -60,7 +60,7 @@ $tile-height: 244px;
         top: auto;
     }
     a {
-        color: $ui-white;
+        color: $text-white;
         text-decoration: underline;
     }
 }

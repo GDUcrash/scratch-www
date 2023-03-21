@@ -25,7 +25,7 @@
         background-color: $ui-blue;
         cursor: pointer;
         padding: 1rem 2rem;
-        color: $ui-white;
+        color: $text-white;
         font-size: 1rem;
     }
 
@@ -44,11 +44,11 @@
     .download-header {
         background-color: $ui-blue;
         padding: 4rem 0;
-        color: $ui-white;
+        color: $text-white;
 
 
         .title {
-            color: $ui-white;
+            color: $text-white;
         }
 
         .inner {
@@ -68,7 +68,7 @@
                 .download-title {
                     display: flex;
                     margin-bottom: 2rem;
-                    color: $ui-white;
+                    color: $text-white;
                     font-size: 2rem;
                 }
 

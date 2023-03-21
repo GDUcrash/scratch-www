@@ -15,7 +15,7 @@ $navigation-height: 50px;
 
     &,
     a {
-        color: $ui-white;
+        color: $text-white;
     }
 
     a {
@@ -32,7 +32,7 @@ $navigation-height: 50px;
         text-decoration: none;
         text-shadow: none;
         line-height: $navigation-height * 0.5;
-        color: $ui-white;
+        color: $text-white;
         font-weight: normal;
     }
 

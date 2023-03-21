@@ -112,7 +112,7 @@ a, a:link, a:visited, a:active{
     background-color: $annual-report-aqua;
 
     h1, h2, p {
-        color: $ui-white;
+        color: $text-white;
     }
 
     @media #{$intermediate-and-smaller} {
@@ -629,10 +629,10 @@ a, a:link, a:visited, a:active{
     }
 
     background-color: $annual-report-aqua;
-    color: $ui-white;
+    color: $text-white;
 
     h2, h3, h4, p {
-        color: $ui-white;
+        color: $text-white;
     }
 
     h2{
@@ -922,11 +922,11 @@ img.comment-viz{
 
 .reach-scratch-jr {
     background-color: $annual-report-aqua;
-    color: $ui-white;
+    color: $text-white;
     padding: 100px 0;
 
     h2, h3, h4, p {
-        color: $ui-white;
+        color: $text-white;
     }
 
     .inner {
@@ -1008,7 +1008,7 @@ img.comment-viz{
             // margin-bottom: 60px;
 
             h4 {
-                color: $ui-white;
+                color: $text-white;
                 word-break: break-word;
             }
 
@@ -1141,7 +1141,7 @@ img.comment-viz{
             text-align: center;
 
             h2, p {
-                color: $ui-white;
+                color: $text-white;
             }
 
             p {
@@ -1334,7 +1334,7 @@ img.comment-viz{
         }
         .bubble{
             margin-left: 0px;
-            color: $ui-white;
+            color: $text-white;
             font-weight: bold;
             @media #{$medium-and-smaller} {
                 margin-left: auto;
@@ -1838,7 +1838,7 @@ img.comment-viz{
             }
         }
         .download{
-            color: $ui-white;
+            color: $text-white;
             font-weight: bold;
             border-radius: 4px;
             text-align: center;
@@ -2307,10 +2307,10 @@ img.comment-viz{
 
     background-color: $header-gray;
     width: 100%;
-    color: $ui-white;
+    color: $text-white;
 
     h2, h4, p {
-        color: $ui-white;
+        color: $text-white;
     }
 
     h2 {
@@ -2353,7 +2353,7 @@ img.comment-viz{
             margin-right: 15px;
         }
         h5{
-            color: $ui-white;
+            color: $text-white;
             margin-bottom: 0px;
             text-align: left;
             @media #{$small}{
@@ -2773,7 +2773,7 @@ p.contain-p{
         margin-left: 20px;
 
         h2, p {
-            color: $ui-white;
+            color: $text-white;
         }
 
         width: 460px;
@@ -2856,7 +2856,7 @@ p.contain-p{
         height: 58px;
 
         p {
-            color: $ui-white;
+            color: $text-white;
             font-weight: bold;
         }
 

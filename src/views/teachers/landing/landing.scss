@@ -29,7 +29,7 @@ $story-width: $cols3;
 
             h1 {
                 margin: 0;
-                color: $ui-white;
+                color: $text-white;
             }
 
 
@@ -42,11 +42,11 @@ $story-width: $cols3;
                     margin: 0;
                     max-width: $cols6;
                     text-align: left;
-                    color: $ui-white;
+                    color: $text-white;
 
                     a {
-                        border-bottom: 1px solid $ui-white;
-                        color: $ui-white;
+                        border-bottom: 1px solid $text-white;
+                        color: $text-white;
                     }
                 }
             }
@@ -189,11 +189,11 @@ $story-width: $cols3;
         p {
             margin: 0;
             text-align: left;
-            color: $ui-white;
+            color: $text-white;
 
             a {
                 border-bottom: 1px solid $ui-white;
-                color: $ui-white;
+                color: $text-white;
             }
         }
 
@@ -201,7 +201,7 @@ $story-width: $cols3;
             margin: 0 0 2rem 0;
             text-align: left;
             line-height: normal;
-            color: $ui-white;
+            color: $text-white;
         }
 
         .teacher-account-buttons {

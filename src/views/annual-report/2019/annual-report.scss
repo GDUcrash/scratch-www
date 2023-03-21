@@ -71,7 +71,7 @@ p {
     background-color: $ui-blue;
 
     h1, h2, p {
-        color: $ui-white;
+        color: $text-white;
     }
 
     @media #{$intermediate-and-smaller} {
@@ -606,10 +606,10 @@ p {
     }
 
     background-color: $ui-aqua;
-    color: $ui-white;
+    color: $text-white;
 
     h2, h3, h4, p {
-        color: $ui-white;
+        color: $text-white;
     }
 
     .reach-intro {
@@ -823,11 +823,11 @@ p {
 
 .reach-scratch-jr {
     background-color: #0EA57A;
-    color: $ui-white;
+    color: $text-white;
     padding: 100px 0;
 
     h2, h3, h4, p {
-        color: $ui-white;
+        color: $text-white;
     }
 
     .inner {
@@ -895,7 +895,7 @@ p {
             width: 100%;
 
             h4 {
-                color: $ui-white;
+                color: $text-white;
                 word-break: break-word;
             }
 
@@ -1064,7 +1064,7 @@ p {
             text-align: center;
 
             h2, p {
-                color: $ui-white;
+                color: $text-white;
             }
 
             p {
@@ -1430,7 +1430,7 @@ p {
                 margin-top: 8px;
 
                 p {
-                    color: $ui-white;
+                    color: $text-white;
                     line-height: 40px;
                     font-size: 1.25rem;
                 }
@@ -1684,7 +1684,7 @@ p {
                 margin-top: 8px;
 
                 p {
-                    color: $ui-white;
+                    color: $text-white;
                     line-height: 40px;
                     font-size: 1.25rem;
                 }
@@ -1950,7 +1950,7 @@ p {
                     margin-top: 8px;
 
                     p {
-                        color: $ui-white;
+                        color: $text-white;
                         line-height: 40px;
                         font-size: 1.25rem;
                     }
@@ -2156,10 +2156,10 @@ p {
 
     background-color: $header-gray;
     width: 100%;
-    color: $ui-white;
+    color: $text-white;
 
     h2, p {
-        color: $ui-white;
+        color: $text-white;
     }
 
     h2 {
@@ -2237,7 +2237,7 @@ p {
 }
 
 .subsection-tag {
-    color: $ui-white;
+    color: $text-white;
     font-size: 1rem;
     font-weight: bold;
 
@@ -2550,7 +2550,7 @@ p {
         margin-left: 20px;
 
         h2, p {
-            color: $ui-white;
+            color: $text-white;
         }
 
         width: 460px;
@@ -2632,7 +2632,7 @@ p {
         height: 58px;
 
         p {
-            color: $ui-white;
+            color: $text-white;
             font-weight: bold;
         }
 

@@ -45,12 +45,12 @@
 
     a {
         margin: auto 0;
-        color: $ui-white;
+        color: $text-white;
 
         &:link,
         &:visited,
         &:active {
-            color: $ui-white;
+            color: $text-white;
         }
 
         &:hover {

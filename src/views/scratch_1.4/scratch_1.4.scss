@@ -15,23 +15,23 @@
             h1 {
                 margin: 0 0 2rem 0;
                 text-align: left;
-                color: $ui-white;
+                color: $text-white;
             }
 
             p {
                 margin: 0;
                 text-align: left;
-                color: $ui-white;
+                color: $text-white;
 
                 a {
                     border-bottom: 1px solid $ui-white;
-                    color: $ui-white;
+                    color: $text-white;
                 }
             }
 
             .band {
                 margin-top: 2rem;
-                background-color: $ui-white-15percent;
+                background-color: $text-white-15percent;
                 padding: 1rem 0;
             }
 
@@ -94,7 +94,7 @@
     }
 
     .mod-link {
-        color: $ui-white;
+        color: $text-white;
     }
 
     #faqs {

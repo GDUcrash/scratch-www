@@ -124,16 +124,16 @@ are not obscured by gradient overlay */
 
 .studio-selector-button-selected {
     background-color: $ui-mint-green;
-    color: $ui-white;
+    color: $text-white;
 }
 
 .studio-selector-button-waiting {
     background-color: $ui-light-mint;
-    color: $ui-white;
+    color: $text-white;
 }
 
 .studio-selector-button-text-selected {
-    color: $ui-white;
+    color: $text-white;
 }
 
 .studio-selector-button-text-unselected {
@@ -155,7 +155,7 @@ are not obscured by gradient overlay */
     padding: .0625rem .075rem;
     width: 1.5rem;
     height: 1.5rem;
-    color: $ui-white;
+    color: $text-white;
     box-sizing: border-box;
 }
 

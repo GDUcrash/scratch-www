@@ -17,7 +17,7 @@ $base-bg: $ui-white;
 
             h1 {
                 text-align: center;
-                color: $ui-white;
+                color: $text-white;
                 font-size: 3rem;
             }
 
@@ -25,11 +25,11 @@ $base-bg: $ui-white;
                 margin: 0;
                 width: $cols6;
                 text-align: left;
-                color: $ui-white;
+                color: $text-white;
 
                 a {
                     border-bottom: 1px solid $ui-white;
-                    color: $ui-white;
+                    color: $text-white;
                 }
             }
         }
@@ -91,7 +91,7 @@ $base-bg: $ui-white;
             &.active {
                 opacity: 1;
                 background-color: $ui-aqua;
-                color: $ui-white;
+                color: $text-white;
             }
 
             &:active {

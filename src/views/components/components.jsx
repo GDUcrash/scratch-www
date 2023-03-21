@@ -168,6 +168,7 @@ const Components = () => (
                 <span className="type-gray">$type-gray</span>
                 <span className="type-white">$type-white</span>
                 <span className="link-blue">$link-blue</span>
+                <span className="link-blue-hover">$link-blue-hover</span>
                 <span className="splash-green">$ui-aqua</span>
                 <span className="splash-pink">$ui-purple</span>
                 <span className="splash-blue">$ui-blue</span>

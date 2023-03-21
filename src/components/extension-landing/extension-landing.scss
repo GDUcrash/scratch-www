@@ -82,7 +82,7 @@
 
     .extension-header {
         background-size: cover;
-        color: $ui-white;
+        color: $text-white;
 
         .inner {
             justify-content: space-between;
@@ -105,7 +105,7 @@
                 h1, h2 {
                     display: flex;
                     margin-bottom: 2rem;
-                    color: $ui-white;
+                    color: $text-white;
                     width: 100%;
 
                     img {
@@ -120,7 +120,7 @@
 
                 a {
                     border-bottom: 1px solid $ui-white;
-                    color: $ui-white;
+                    color: $text-white;
                 }
             }
 

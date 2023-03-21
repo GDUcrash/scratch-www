@@ -80,7 +80,7 @@ html,body{
 
     .finish-later-modal-header{
         background-color: $ui-blue;
-        color: $ui-white;
+        color: $text-white;
         height: 46px;
         display:flex;
         justify-content: center;
@@ -304,7 +304,7 @@ html,body{
 
     button.secondary-finish-later{
         background-color: rgba(0,0,0,0);
-        color: $ui-white;
+        color: $text-white;
         border: solid 1px $ui-white;
     }
 
