@@ -121,7 +121,7 @@ module.exports.handleLogIn = (formData, callback) => (dispatch => {
     formData.useMessages = true; // NOTE: this may or may not be being used anywhere else
     api({
         method: 'post',
-        host: '',
+        host: process.env.API_CLASSIC_HOST,
         uri: '/accounts/login/',
         json: formData,
         useCsrf: true
@@ -157,7 +157,7 @@ module.exports.handleLogIn = (formData, callback) => (dispatch => {
 module.exports.handleLogOut = () => (() => {
     // POST to /accounts/logout using a dummy form instead of XHR. This ensures
     // logout only happens AFTER onbeforeunload has the chance to prevent nagivation.
-    jar.use('scratchcsrftoken', '/csrf_token/', (err, csrftoken) => {
+    jar.use('scratchcsrftoken', process.env.API_CLASSIC_HOST + '/csrf_token/', (err, csrftoken) => {
         if (err) return log.error('Error while retrieving CSRF token', err);
         const form = document.createElement('form');
         form.setAttribute('method', 'POST');

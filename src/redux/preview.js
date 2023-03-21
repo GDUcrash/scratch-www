@@ -697,7 +697,7 @@ module.exports.updateProjectThumbnail = (id, blob) => (dispatch => {
         withCredentials: true,
         useCsrf: true,
         body: blob,
-        host: '' // Not handled by the API, use existing infrastructure
+        host: process.env.API_CLASSIC_HOST // Not handled by the API, use existing infrastructure
     }, (err, body, res) => {
         if (err || res.statusCode !== 200) {
             dispatch(module.exports.setFetchStatus('project-thumbnail', module.exports.Status.ERROR));

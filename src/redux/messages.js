@@ -103,7 +103,7 @@ module.exports.setStatus = (type, status) => ({
 module.exports.clearMessageCount = () => (dispatch => {
     dispatch(module.exports.setStatus('CLEAR_STATUS', module.exports.Status.FETCHING));
     api({
-        host: '',
+        host: process.env.API_CLASSIC_HOST,
         uri: '/site-api/messages/messages-clear/',
         method: 'POST',
         useCsrf: true
@@ -134,7 +134,7 @@ module.exports.clearAdminMessage = (messageType, messageId, messageCount, adminM
     dispatch => {
         dispatch(module.exports.setStatus('CLEAR_STATUS', module.exports.Status.FETCHING));
         api({
-            host: '',
+            host: process.env.API_CLASSIC_HOST,
             uri: '/site-api/messages/messages-delete/',
             method: 'POST',
             useCsrf: true,

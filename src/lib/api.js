@@ -30,6 +30,8 @@ module.exports = (opts, callback) => {
         });
     }
 
+    console.log("REQUESTING: " + opts.uri, opts);
+
     opts.uri = opts.host + opts.uri;
 
     if (opts.params) {
@@ -62,6 +64,7 @@ module.exports = (opts, callback) => {
                 }
             }
         }
+        options.withCredentials = true;
         xhr(options, (err, res, body) => {
             if (err) log.error(err);
             if (options.responseType === 'json' && typeof body === 'string') {
@@ -92,7 +95,7 @@ module.exports = (opts, callback) => {
         opts.headers['X-Token'] = opts.authentication;
     }
     if (opts.useCsrf) {
-        jar.use('scratchcsrftoken', '/csrf_token/', (err, csrftoken) => {
+        jar.use('scratchcsrftoken', process.env.API_CLASSIC_HOST + '/csrf_token/', (err, csrftoken) => {
             if (err) return log.error('Error while retrieving CSRF token', err);
             opts.headers['X-CSRFToken'] = csrftoken;
             apiRequest(opts);

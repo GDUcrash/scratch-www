@@ -61,7 +61,7 @@ class StudentRegistration extends React.Component {
         });
         formData = defaults({}, formData || {}, this.state.formData);
         api({
-            host: '',
+            host: process.env.API_CLASSIC_HOST,
             uri: '/classes/register_new_student/',
             method: 'post',
             useCsrf: true,

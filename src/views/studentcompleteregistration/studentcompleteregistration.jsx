@@ -76,7 +76,7 @@ class StudentCompleteRegistration extends React.Component {
         }
 
         api({
-            host: '',
+            host: process.env.API_CLASSIC_HOST,
             uri: '/classes/student_update_registration/',
             method: 'post',
             useCsrf: true,

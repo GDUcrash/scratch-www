@@ -28,7 +28,7 @@ class Download extends React.Component {
         }
 
         api({
-            host: '',
+            host: process.env.API_CLASSIC_HOST,
             uri: uri,
             responseType: 'string'
         }, (err, body, res) => {

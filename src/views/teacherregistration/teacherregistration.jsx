@@ -47,7 +47,7 @@ class TeacherRegistration extends React.Component {
     handleRegister (formData) {
         this.setState({waiting: true});
         api({
-            host: '',
+            host: process.env.API_CLASSIC_HOST,
             uri: '/classes/register_educator/',
             method: 'post',
             useCsrf: true,

@@ -85,7 +85,7 @@ class Splash extends React.Component {
     }
     handleRefreshHomepageCache () {
         api({
-            host: '',
+            host: process.env.API_CLASSIC_HOST,
             uri: '/scratch_admin/homepage/clear-cache/',
             method: 'post',
             useCsrf: true
@@ -125,7 +125,7 @@ class Splash extends React.Component {
     }
     handleDismiss (cue) {
         api({
-            host: '',
+            host: process.env.API_CLASSIC_HOST,
             uri: '/site-api/users/set-template-cue/',
             method: 'post',
             useCsrf: true,

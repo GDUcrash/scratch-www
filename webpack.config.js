@@ -3,6 +3,8 @@ const gitsha = require('git-bundle-sha');
 const path = require('path');
 const webpack = require('webpack');
 
+require('dotenv').config();
+
 // Plugins
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -223,6 +225,7 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': '"' + (process.env.NODE_ENV || 'development') + '"',
             'process.env.API_HOST': '"' + (process.env.API_HOST || 'https://api.scratch.mit.edu') + '"',
+            'process.env.API_CLASSIC_HOST': '"' + (process.env.API_CLASSIC_HOST || '') + '"',
             'process.env.RECAPTCHA_SITE_KEY': '"' +
                     (process.env.RECAPTCHA_SITE_KEY || '6Lf6kK4UAAAAABKTyvdSqgcSVASEnMrCquiAkjVW') + '"',
             'process.env.ASSET_HOST': '"' + (process.env.ASSET_HOST || 'https://assets.scratch.mit.edu') + '"',

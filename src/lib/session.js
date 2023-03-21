@@ -42,7 +42,7 @@ total delay time: 3500ms
 */
 module.exports.requestSessionWithRetry = (resolve, reject, retriesLeft, totalDelayMS) => {
     api({
-        host: '',
+        host: process.env.API_CLASSIC_HOST,
         uri: '/session/'
     }, (err, body, response) => {
         if (err || (response && response.statusCode === 404)) {

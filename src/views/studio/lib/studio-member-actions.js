@@ -93,7 +93,7 @@ const removeManager = username => ((dispatch, getState) => new Promise((resolve,
         withCredentials: true,
         useCsrf: true,
         params: {usernames: username}, // sic, ?usernames=<username>
-        host: '' // Not handled by the API, use existing infrastructure
+        host: process.env.API_CLASSIC_HOST // Not handled by the API, use existing infrastructure
     }, (err, body, res) => {
         const error = normalizeError(err, body, res);
         if (error) return reject(error);
@@ -120,7 +120,7 @@ const removeCurator = username => ((dispatch, getState) => new Promise((resolve,
         withCredentials: true,
         useCsrf: true,
         params: {usernames: username}, // sic, ?usernames=<username>
-        host: '' // Not handled by the API, use existing infrastructure
+        host: process.env.API_CLASSIC_HOST // Not handled by the API, use existing infrastructure
     }, (err, body, res) => {
         const error = normalizeError(err, body, res);
         if (error) return reject(error);
@@ -143,7 +143,7 @@ const inviteCurator = username => ((dispatch, getState) => new Promise((resolve,
         withCredentials: true,
         useCsrf: true,
         params: {usernames: username}, // sic, ?usernames=<username>
-        host: '' // Not handled by the API, use existing infrastructure
+        host: process.env.API_CLASSIC_HOST // Not handled by the API, use existing infrastructure
     }, (err, body, res) => {
         const error = normalizeError(err, body, res);
         if (error) return reject(error);
@@ -160,7 +160,7 @@ const promoteCurator = username => ((dispatch, getState) => new Promise((resolve
         withCredentials: true,
         useCsrf: true,
         params: {usernames: username}, // sic, ?usernames=<username>
-        host: '' // Not handled by the API, use existing infrastructure
+        host: process.env.API_CLASSIC_HOST // Not handled by the API, use existing infrastructure
     }, (err, body, res) => {
         const error = normalizeError(err, body, res);
         if (error) return reject(error);
@@ -184,7 +184,7 @@ const acceptInvitation = () => ((dispatch, getState) => new Promise((resolve, re
         withCredentials: true,
         useCsrf: true,
         params: {usernames: username}, // sic, ?usernames=<username>
-        host: '' // Not handled by the API, use existing infrastructure
+        host: process.env.API_CLASSIC_HOST // Not handled by the API, use existing infrastructure
     }, (err, body, res) => {
         const error = normalizeError(err, body, res);
         if (error) return reject(error);

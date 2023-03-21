@@ -1168,7 +1168,7 @@ class EmailStep extends React.Component {
     handleValidSubmit (formData, reset, invalidate) {
         this.setState({waiting: true});
         api({
-            host: '',
+            host: process.env.API_CLASSIC_HOST,
             uri: '/accounts/check_email/',
             params: {email: formData.user.email}
         }, (err, res) => {

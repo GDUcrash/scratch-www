@@ -133,7 +133,7 @@ module.exports.validateEmailLocally = email => {
 module.exports.validateEmailRemotely = email => (
     new Promise(resolve => {
         api({
-            host: '', // not handled by API; use existing infrastructure
+            host: process.env.API_CLASSIC_HOST, // not handled by API; use existing infrastructure
             params: {email: email},
             uri: '/accounts/check_email/'
         }, (err, body, res) => {

@@ -212,7 +212,7 @@ const BecomeAScratcher = ({user, invitedScratcher, scratcher, sessionStatus}) =>
 
     const handlePromoteToScratcher = onSuccess => {
         api({
-            host: '',
+            host: process.env.API_CLASSIC_HOST,
             uri: `/users/${user.username}/promote-to-scratcher/`,
             method: 'GET'
         }, err => {

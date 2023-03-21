@@ -181,7 +181,7 @@ class JoinFlow extends React.Component {
             waiting: true
         }, () => {
             api({
-                host: '',
+                host: process.env.API_CLASSIC_HOST,
                 uri: '/accounts/register_new_user/',
                 method: 'post',
                 useCsrf: true,

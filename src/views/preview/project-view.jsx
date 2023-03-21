@@ -638,7 +638,7 @@ class Preview extends React.Component {
     }
     handleBannerDismiss (cue) {
         api({
-            host: '',
+            host: process.env.API_CLASSIC_HOST,
             uri: '/site-api/users/set-template-cue/',
             method: 'post',
             useCsrf: true,

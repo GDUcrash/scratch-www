@@ -124,7 +124,7 @@ const normalizeError = (err, body, res) => {
 const mutateStudioTitle = value => ((dispatch, getState) => {
     dispatch(startMutation('title'));
     api({
-        host: '',
+        host: process.env.API_CLASSIC_HOST,
         uri: `/site-api/galleries/all/${selectStudioId(getState())}/`,
         method: 'PUT',
         useCsrf: true,
@@ -140,7 +140,7 @@ const mutateStudioTitle = value => ((dispatch, getState) => {
 const mutateStudioDescription = value => ((dispatch, getState) => {
     dispatch(startMutation('description'));
     api({
-        host: '',
+        host: process.env.API_CLASSIC_HOST,
         uri: `/site-api/galleries/all/${selectStudioId(getState())}/`,
         method: 'PUT',
         useCsrf: true,
@@ -162,7 +162,7 @@ const mutateFollowingStudio = shouldFollow => ((dispatch, getState) => {
     uri += shouldFollow ? 'add/' : 'remove/';
     uri += `?usernames=${username}`;
     api({
-        host: '',
+        host: process.env.API_CLASSIC_HOST,
         uri: uri,
         method: 'PUT',
         useCsrf: true
@@ -185,7 +185,7 @@ const mutateStudioImage = input => ((dispatch, getState) => {
     const formData = new FormData();
     formData.append('file', input.files[0]);
     api({
-        host: '',
+        host: process.env.API_CLASSIC_HOST,
         uri: `/site-api/galleries/all/${studioId}/`,
         method: 'POST',
         withCredentials: true,
@@ -214,7 +214,7 @@ const mutateStudioCommentsAllowed = shouldAllow => ((dispatch, getState) => {
     const state = getState();
     const studioId = selectStudioId(state);
     api({
-        host: '',
+        host: process.env.API_CLASSIC_HOST,
         uri: `/site-api/comments/gallery/${studioId}/toggle-comments/`,
         method: 'POST',
         useCsrf: true
@@ -232,7 +232,7 @@ const mutateStudioOpenToAll = shouldBeOpen => ((dispatch, getState) => {
     const state = getState();
     const studioId = selectStudioId(state);
     api({
-        host: '',
+        host: process.env.API_CLASSIC_HOST,
         uri: `/site-api/galleries/${studioId}/mark/${shouldBeOpen ? 'open' : 'closed'}/`,
         method: 'PUT',
         useCsrf: true
